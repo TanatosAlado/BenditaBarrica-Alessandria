@@ -4,7 +4,6 @@ import './App.css';
 import NavBar from './componentes/NavBar';
 import './estilos/estilos.css'
 
-
 function App() {
 
   const styles = {
@@ -15,7 +14,8 @@ function App() {
   return (
 
     <>
-        <NavBar> </NavBar>
+        <NavBar>        </NavBar>
+
 
 <div className="App">
   <header className="App-header">
