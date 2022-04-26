@@ -1,24 +1,42 @@
 import logo from './logo.svg';
 import './App.css';
+//import styles from 'styled-components';
+import NavBar from './componentes/NavBar';
+import './estilos/estilos.css'
+
 
 function App() {
+
+  const styles = {
+    color: "red"
+  }
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Bendita Barrica - Alessandria Cristian
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Desafío Inicial
-        </a>
-      </header>
-    </div>
+
+    <>
+        <NavBar> </NavBar>
+
+<div className="App">
+  <header className="App-header">
+    <img src={logo} className="App-logo" alt="logo" />
+    <p style={styles}>
+      Bendita Barrica - Alessandria Cristian
+    </p>
+    <a
+      className="App-link"
+      href="#"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Desafío 2
+    </a>
+    {/* <Title>TEST STYLE</Title> */}
+  </header>
+</div>
+    </>
+
+
   );
 }
 

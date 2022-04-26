@@ -1,0 +1,35 @@
+
+.items {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    justify-content: flex-end ;
+}
+
+.barra{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: start;
+    background-color: brown;
+
+}
+
+.items li {
+    list-style-type: none;
+    padding: 15px;
+    font-size: 1rem;
+}
+
+.items li a {
+    text-decoration: none;
+    color: black;
+}
+
+.items li a:hover {
+    text-shadow: 2px 2px 3px #808000;
+}
+
+.barra img{
+    width: 100px;
+}
