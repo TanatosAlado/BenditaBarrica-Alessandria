@@ -16,7 +16,7 @@ function App() {
 
     <>
         <NavBar />
-        <ItemListContainer props={"Gabriel"} />
+        <ItemListContainer greeting={"Gabriel"} />
 
 <div className="App">
   <header className="App-header">

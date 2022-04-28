@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ItemListContainer({props}){
+export default function ItemListContainer({greeting}){
 
    //Aca puede ir contenido de JavaScript
     
@@ -8,7 +8,7 @@ export default function ItemListContainer({props}){
     
         <>
         <div className="bienvenida">
-            Hola {props} bienvenido a nuestra tienda
+            Hola {greeting} bienvenido a nuestra tienda
         </div>
             
         </>
