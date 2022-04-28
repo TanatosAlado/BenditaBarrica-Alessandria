@@ -3,6 +3,7 @@ import './App.css';
 //import styles from 'styled-components';
 import NavBar from './componentes/NavBar';
 import './estilos/estilos.css'
+import ItemListContainer from './componentes/ItemListContainer';
 
 function App() {
 
@@ -14,8 +15,8 @@ function App() {
   return (
 
     <>
-        <NavBar>        </NavBar>
-
+        <NavBar />
+        <ItemListContainer props={"Gabriel"} />
 
 <div className="App">
   <header className="App-header">
@@ -29,9 +30,9 @@ function App() {
       target="_blank"
       rel="noopener noreferrer"
     >
-      Desafío 2
+      Desafío 3 - CartWidget 
     </a>
-    {/* <Title>TEST STYLE</Title> */}
+    
   </header>
 </div>
     </>

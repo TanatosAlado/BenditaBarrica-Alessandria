@@ -23,7 +23,7 @@
 
 .items li a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .items li a:hover {
@@ -32,4 +32,23 @@
 
 .barra img{
     width: 100px;
+}
+
+.myCard img{
+    width: 60px;
+    height: 60px;
+}
+
+.myCard{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-left: 5px;
+}
+
+
+.bienvenida{
+    background-color: brown;
+    color: white;
+    text-align: center;
 }
