@@ -8,7 +8,6 @@ export default function NavBar(){
     
     
 return (
-    <>
         <div className="barra">
             <img src={barrica} alt="logo" />
             <ul className="items">
@@ -23,6 +22,5 @@ return (
                         </li>
             </ul>
         </div>
-    </>
 );
 }
