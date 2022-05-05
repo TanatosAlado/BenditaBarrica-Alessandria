@@ -27,7 +27,7 @@ function App() {
             Bendita Barrica - Alessandria Cristian
           </p>
           <p>
-            Desafío 4 - Contador 
+            Desafío 5 - Catalogo con Maps 
           </p>
           
         </header>

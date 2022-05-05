@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import casaboher from '../images/casaboher.png'
 
 export default function ItemCount({stock}) {
 
@@ -21,7 +20,6 @@ export default function ItemCount({stock}) {
     
     return (
         <div className='formatoContador'>
-            <img src={casaboher} alt="logo" />
             <div className='botonesContador'>
                 <button onClick={subs}>-</button>
                 <p className='margenes'>{count}</p>
