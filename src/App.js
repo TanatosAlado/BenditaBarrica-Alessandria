@@ -5,6 +5,7 @@ import NavBar from './componentes/NavBar';
 import './estilos/estilos.css'
 import ItemListContainer from './componentes/ItemListContainer';
 import bienvenida from './images/bienvenida.png'
+import ItemDetailContainer from './componentes/ItemDetailContainer';
 
 function App() {
 
@@ -19,7 +20,9 @@ function App() {
       <div className='logoInicial'>
         <img src={bienvenida} alt="logo" />
       </div>
+      <ItemDetailContainer />
       <ItemListContainer greeting={"Gabriel"} />
+      
 
       <div className="App">
         <header className="App-header">
@@ -27,7 +30,7 @@ function App() {
             Bendita Barrica - Alessandria Cristian
           </p>
           <p>
-            Desafío 5 - Catalogo con Maps 
+            Desafío 6 - Detalle del Producto 
           </p>
           
         </header>

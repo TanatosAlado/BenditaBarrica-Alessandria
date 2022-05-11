@@ -2,7 +2,6 @@ import React from 'react'
 import Item from './Item'
 
 function ItemList({productos}) {
-console.log(productos)
 
 return(
     productos?.map(prod => (

@@ -25,4 +25,21 @@ const productos = [
     }
 ]
 
+
+
+export const unProducto = [
+    {
+        id: 1,
+        nombre: 'Carmelo Patti',
+        origen: 'Mendoza',
+        cepa: 'Cabernet Franc',
+        precio: '$1620',
+        maridaje: 'Tablas de queso y carnes rojas',
+        stock: '14',
+        imagen: 'https://www.vinosdeayerbe.com.ar/wp-content/uploads/2021/04/Carmelo_Patti_CabernetFranc.jpeg'
+    }
+]
+
+
+
 export default productos;

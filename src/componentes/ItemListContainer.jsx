@@ -1,23 +1,23 @@
 import React, { useEffect, useState } from "react";
 import ItemList from './ItemList'
-
-import CustomFetch from '../datos/CustomFetch';
-import productos from "../datos/BaseVinos";
+import personalFetch from '../datos/personalFetch';
+import productos from "../datos/nuestrosVinos";
 
 export default function ItemListContainer(){
     
   const [prod, setProd] = useState([]);
-  // const [loading, setLoading] = useState(true)
-
 
   useEffect (() => {
-    CustomFetch(2000, productos)
+    personalFetch(10, productos)
     .then( resultado => setProd(resultado))
     .catch(error => console.log(error))
-    // .finally(() => {
-    //   setLoading(false)
-    // })
+
+    return () => {
+      //todo lo que sucede aca, se ejecuta antes del primer renderizado.
+    };
+
   }, [prod])
+  
     return (
 
     <>

@@ -16,10 +16,7 @@ return (
                 <ItemCount stock={stock} />
             </Card.Body>
         </Card>
-    </div>
-    
-    
+    </div>   
 )
 }
-
 export default Item
