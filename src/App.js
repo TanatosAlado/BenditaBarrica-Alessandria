@@ -6,6 +6,12 @@ import './estilos/estilos.css'
 import ItemListContainer from './componentes/ItemListContainer';
 import bienvenida from './images/bienvenida.png'
 import ItemDetailContainer from './componentes/ItemDetailContainer';
+import Inicio from './views/Inicio';
+import Nosotros from './views/Nosotros';
+import Contacto from './views/Contacto';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+
 
 function App() {
 
@@ -15,27 +21,19 @@ function App() {
 
   return (
 
-    <>
-      <NavBar />
-      <div className='logoInicial'>
-        <img src={bienvenida} alt="logo" />
-      </div>
-      <ItemDetailContainer />
-      <ItemListContainer greeting={"Gabriel"} />
-      
-
-      <div className="App">
-        <header className="App-header">
-          <p style={styles}>
-            Bendita Barrica - Alessandria Cristian
-          </p>
-          <p>
-            Desafío 6 - Detalle del Producto 
-          </p>
-          
-        </header>
-      </div>
-    </>
+    
+      <Router>
+        <NavBar />
+        <div className='logoInicial'>
+          <img src={bienvenida} alt="logo" />
+        </div>
+        <Routes>
+          <Route path="/" element={<ItemListContainer />} />
+          <Route path="/item/:id" element={<ItemDetailContainer />} />
+          <Route path="/categoria/:idCategoria" element={<ItemListContainer />} />
+        </Routes>
+        {/* <Footer /> */}
+      </Router>
   );
 }
 

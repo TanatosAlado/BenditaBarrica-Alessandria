@@ -1,7 +1,9 @@
 import React from 'react'
 
 
-const ItemDetail = ({id, nombre, origen,cepa, precio, maridaje, stock, imagen}) => {
+const ItemDetail = ({item}) => {
+
+    
 
     return (
 
@@ -10,14 +12,14 @@ const ItemDetail = ({id, nombre, origen,cepa, precio, maridaje, stock, imagen}) 
                 <h1>Detalle Producto</h1>
                     <div className='containerDetail'>
                         
-                        <img src={imagen} alt={nombre} /> 
+                        <img src={item?.imagen} alt={item?.nombre} /> 
                         <div>
-                            <h2>Nombre: {nombre}</h2>
-                            <h3>Precio: {precio}</h3>
-                            <h3>Origen: {origen}</h3>
-                            <h3>Cepa: {cepa}</h3>
-                            <h4>Maridaje: {maridaje}</h4>
-                            <h4>Stock: {stock}</h4>
+                            <h2>Nombre: {item?.nombre}</h2>
+                            <h3>Precio: {item?.precio}</h3>
+                            <h3>Origen: {item?.origen}</h3>
+                            <h3>Cepa: {item?.cepa}</h3>
+                            <h4>Maridaje: {item?.maridaje}</h4>
+                            <h4>Stock: {item?.stock}</h4>
                         </div>
                     </div>
             </div>

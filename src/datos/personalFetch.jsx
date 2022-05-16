@@ -1,14 +1,14 @@
 let isOk = true;
 
-const personalFetch = (time, task) => {
+const personalFetch = (task, idCat) => {
     return new Promise ((resolve, reject) => {
         setTimeout(() =>{
             if(isOk){
-                resolve(task);
+                resolve(idCat? task.filter(bebida=> bebida.categoria===idCat) : task);
             } else {
                 reject ('error')
             }
-        }, time)
+        }, 2000)
     })
 }
 export default personalFetch;
@@ -16,15 +16,18 @@ export default personalFetch;
 
 let isOk2 = true;
 
-export const getItem = (time, unProducto) => {
+export const getItem = (vinos, id) => {
 
     return new Promise ((resolve, reject) => {
         setTimeout(() =>{
             if(isOk2){
-                resolve(unProducto);
+                console.log(id)
+                let valor = vinos.find(item => item.id === parseInt(id)); 
+                console.log(valor)
+                resolve(valor);
             } else {
                 reject ('error')
             }
-        }, time)
+        }, 2000)
     })
 }

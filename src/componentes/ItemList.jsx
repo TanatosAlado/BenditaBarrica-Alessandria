@@ -7,6 +7,7 @@ return(
     productos?.map(prod => (
         <Item
         key={prod.id}
+        id={prod.id}
         nombre ={prod.nombre}
         precio ={prod.precio}
         imagen ={prod.imagen}

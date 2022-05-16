@@ -1,35 +1,32 @@
 import React, { useEffect, useState } from 'react'
 import {getItem} from '../datos/personalFetch'
-import { unProducto } from '../datos/nuestrosVinos'
 import ItemDetail from './ItemDetail'
+import { useParams } from 'react-router-dom'
+import Spinner from './Spinner'
+import productos from '../datos/nuestrosVinos'
+
 
 
 const ItemDetailContainer = () => {
 
     const [producto, setProducto] = useState([])
+    const[carga, setCarga] = useState(true);
+
+    const{id}= useParams();
 
     useEffect(() => {
-        getItem(2000, unProducto)
-            .then((res) =>{
-                setProducto(res)
+        getItem(productos, id)
+            .then(res =>{setProducto(res)
+                setCarga(false)
             })
-    }, [])
+            .catch(error => console.log("error: ", error));
+    }, [id])
     
     return (
         
-        producto?.map(detalle => (
-            <ItemDetail
-                key={detalle.id}
-                nombre ={detalle.nombre}
-                origen ={detalle.origen}
-                cepa ={detalle.cepa}
-                precio ={detalle.precio}
-                maridaje ={detalle.maridaje}
-                imagen ={detalle.imagen}
-                stock ={detalle.stock}
-                />
-        ))
-        
+        <div className="posicion22">
+            {carga? <Spinner /> : <ItemDetail item={producto} />  }
+        </div>
     )
 }
 

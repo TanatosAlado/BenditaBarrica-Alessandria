@@ -1,6 +1,7 @@
 import React from "react";
-import barrica from '../images/barrica.png'
+import barrica from '../images/barrica.png';
 import CartWidget from "./CartWidget";
+import { Link, NavLink } from 'react-router-dom';
 
 export default function NavBar(){
 
@@ -11,14 +12,21 @@ return (
         <div className="barra">
             <img src={barrica} alt="logo" />
             <ul className="items">
-                <li class="nav-item navFlex__item1">
-                    <a href="#"><strong>Inicio</strong></a></li>
-                <li class="nav-item navFlex__item1">
-                    <a href="#"><strong>Productos</strong></a></li>
-                <li class="nav-item navFlex__item1">
-                    <a href="#"><strong>Contacto</strong></a></li>
+
+                <li className="nav-item">
+                    <NavLink to={'./'} className="nav-link" >Inicio</NavLink>
+                </li>
+                    <li className="nav-item">
+                    <NavLink to={'/categoria/Vinos'} className="nav-link" aria-current="page">Vinos</NavLink>
+                </li>
+                <li className="nav-item">
+                    <Link to={'/categoria/Whisky'} className="nav-link">Whiskys</Link>
+                </li>
+                <li className="nav-item">
+                    <Link to={'/categoria/Espirituosas'} className="nav-link">Espirituosas</Link>
+                </li>
                 <li>
-                    <CartWidget />
+                <CartWidget />
                 </li>
             </ul>
         </div>

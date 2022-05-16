@@ -127,3 +127,41 @@
     height: 400px;
     background-color: cadetblue;
 }
+
+.Link{
+    color: white;
+}
+
+.active{
+    background-color: red;
+    padding: 3px;
+}
+
+.contenedorSpinner {
+    height: 100vh;
+    position: relative;
+}
+
+.spinner {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.detallesProducto {
+    margin-top: 7%;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.detallesProducto :link {
+    text-decoration: none;
+    background-color: bisque;
+}
+
+.detallesProducto :hover {
+    text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}

@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Ecommerce Farmacia Tonini
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bendita Barrica es un E-Commerce de Bebidas Alcoholicas
 
-## Available Scripts
+# Finalidad del Proyecto
 
-In the project directory, you can run:
+Si bien éste no será el proyecto final, el objetivo de este desarrollo es forjar los cimientos de un desarrollo más integral para un proyecto personal a corto plazo.
 
-### `npm start`
+# Instalacion 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Pueden descargar el proyecto desde https://github.com/TanatosAlado/BenditaBarrica-Alessandria en formato zip.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Una vez descargado y descomprimido, abrir una ventana de comando sobre la carpeta donde se encuentra el package.json y ejecutar el siguiente comando:
 
-### `npm test`
+----- npm install -----
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Una vez finalizada la instalacion, en la misma ventana de comando ejecutar el siguiente comando
 
-### `npm run build`
+------ npm start ------
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+una vez ejecutado el comando se le abrira un navegador web con el proyecto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Funcionamiento
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Al iniciar el sitio, éste nos arroja directamente un mapeo de todos los productos que se encuentran a dispocisión de compra del cliente. 
+Se permite un filtrado por categoría para ir directo a lo que nos interesa. En cada producto tenemos la opción de mostrar más detalles para ampliar la información del producto seleccionado.
 
-### `npm run eject`
+ # Herramientas
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+ Para el desarrollo de este proyecto se utilizó:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ - Visual Studio Code
+ - HTML - CSS
+ - REACT-BOOTSTRAP
+ - JS
+ - REACT JS
+ - GITHUB (repositorio del proyecto)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Autor
+Cristian Alessandria
