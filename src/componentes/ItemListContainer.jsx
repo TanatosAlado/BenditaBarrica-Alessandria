@@ -10,7 +10,7 @@ export default function ItemListContainer(){
   const [prod, setProd] = useState([]);
 
   //Para utilizar spinner
-  const [carga, setCarga] = useState([]);
+  const [carga, setCarga] = useState(true);
 
   //Para utilizar parametros
   const {idCategoria} = useParams();  

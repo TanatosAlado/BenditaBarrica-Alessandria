@@ -1,4 +1,5 @@
 import React from 'react'
+import ItemCount from './ItemCount'
 
 
 const ItemDetail = ({item}) => {
@@ -14,12 +15,13 @@ const ItemDetail = ({item}) => {
                         
                         <img src={item?.imagen} alt={item?.nombre} /> 
                         <div>
-                            <h2>Nombre: {item?.nombre}</h2>
-                            <h3>Precio: {item?.precio}</h3>
-                            <h3>Origen: {item?.origen}</h3>
-                            <h3>Cepa: {item?.cepa}</h3>
-                            <h4>Maridaje: {item?.maridaje}</h4>
-                            <h4>Stock: {item?.stock}</h4>
+                            <h3>Nombre: {item?.nombre}</h3>
+                            <h4>Origen: {item?.origen}</h4>
+                            <h5>Cepa: {item?.cepa}</h5>
+                            <h5>Maridaje: {item?.maridaje}</h5>
+                            <h4><strong>Precio: {item?.precio}</strong></h4>
+                            <h5>Stock: {item?.stock}</h5>
+                            <ItemCount stock={item?.stock} />
                         </div>
                     </div>
             </div>

@@ -6,7 +6,7 @@ export default function CartWidget(){
    //Aca puede ir contenido de JavaScript
     
     return (
-            <div className="myCard">
+            <div className="miCarro">
                 <img src={miCarrito} alt="logo" />
             </div>
     );
