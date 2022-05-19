@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 
-export default function ItemCount({stock}) {
+export default function ItemCount({stock, inicial, onAdd}) {
 
-    const [count, setCount] = useState(1);
+    const [count, setCount] = useState(inicial);
 
     function adding(){
         count < stock ? setCount(count + 1) : alert('Llegaste al limite de Stock')
@@ -14,9 +14,14 @@ export default function ItemCount({stock}) {
         }
     }
     
-    function onAdd () {
-        alert('Has agregado ' + count + ' items en tu carrito');
-    }
+    // function onAdd () {
+    //     if (count===1){
+    //         alert('Has agregado ' + count + ' item en tu carrito');    
+    //     }
+    //     else{
+    //         alert('Has agregado ' + count + ' items en tu carrito');
+    //     }
+    // }
     
     return (
         <div className='formatoContador'>
@@ -25,7 +30,7 @@ export default function ItemCount({stock}) {
                 <p className='margenes'>{count}</p>
                 <button onClick={adding}>+</button>
             </div>
-            <button onClick={onAdd}>Agregar al Carro</button>
+            <button className='botonCarrito' onClick={()=> onAdd(count)}>Agregar al Carrito</button>
         </div>
     );
 

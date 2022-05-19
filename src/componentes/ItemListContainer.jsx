@@ -16,6 +16,7 @@ export default function ItemListContainer(){
   const {idCategoria} = useParams();  
 
   useEffect (() => {
+    setCarga(true)
     personalFetch(productos, idCategoria)
     
     .then( resultado => {setProd(resultado)

@@ -18,7 +18,7 @@ return (
                         <Card.Text>Precio: {precio}</Card.Text>
                         <Card.Text>Stock: {stock}</Card.Text>
                         <div className="detallesProducto"><Link to={`/item/${id}`}style={{ color: '#00264D' }} >Ver Detalles </Link></div>
-                        <ItemCount stock={stock} />
+                         {/* <ItemCount stock={stock} />  */}
                     </Card.Body>
                 </div>
             </Card>

@@ -5,6 +5,7 @@ import ItemListContainer from './componentes/ItemListContainer';
 import bienvenida from './images/bienvenida.png'
 import ItemDetailContainer from './componentes/ItemDetailContainer';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import Cart from './componentes/Cart'
 
 
 
@@ -22,6 +23,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<ItemListContainer />} />
+          <Route path="/Cart" element={<Cart />} />
           <Route path="/categoria/:idCategoria" element={<ItemListContainer />} />
           <Route path="/item/:id" element={<ItemDetailContainer />} />
         </Routes>
