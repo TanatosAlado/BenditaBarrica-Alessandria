@@ -9,6 +9,7 @@
 .barra{
     display: flex;
     flex-direction: row;
+    
     width: 100%;
     justify-content: start;
     background-color: brown;

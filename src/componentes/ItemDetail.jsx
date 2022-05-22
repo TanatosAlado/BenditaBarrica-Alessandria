@@ -1,17 +1,25 @@
-import React, {useState} from 'react'
+import React, { useContext} from 'react'
 import ItemCount from './ItemCount'
 import { Link } from 'react-router-dom';
-import Cart from './Cart'
+// import Cart from './Cart'
+import CartContext from './CartContext';
+
 
 
 const ItemDetail = ({item}) => {
 
-    const [acumulador, setAcumulador] = useState(0);
+    // const [acumulador, setAcumulador] = useState(0);
 
-    const [Carro, setCarro] = useState(0);
-    function carrito(productosCarro) {
-        setCarro(productosCarro);
+    // const [Carro, setCarro] = useState(0);
+    const Cart= useContext(CartContext);
+
+    function AgregarACarrito(productosCarro) {
+        Cart.addItem({cantidad: productosCarro,...item})
    }
+
+//     function carrito(productosCarro) {
+//         setCarro(productosCarro);
+//    }
 
     return (
 
@@ -28,8 +36,9 @@ const ItemDetail = ({item}) => {
                             <h5>Maridaje: {item?.maridaje}</h5>
                             <h4><strong>Precio: {item?.precio}</strong></h4>
                             <h5>Stock: {item?.stock}</h5>
-                            {Carro? <button className='botonCarro'><Link to='/Cart' style={{ color: '#00264D' }}>Finalizar la compra de ({Carro} productos)</Link></button>:
-                            <ItemCount inicial={1} stock={item?.stock} onAdd={carrito}></ItemCount>}  
+                            {/* {Carro? <button className='botonCarro'><Link to='/Cart' style={{ color: '#00264D' }}>Finalizar la compra de ({Carro} productos)</Link></button>: */}
+                            <ItemCount inicial={1} stock={item?.stock} onAdd={AgregarACarrito}></ItemCount>  
+                            <button onClick={()=>console.log(Cart.ProductosCarrito)} className='botonCarro'><Link to='/Cart' style={{ color: '#00264D' }}>Finalizar la compra</Link></button>
 
                             {/* <ItemCount stock={item?.stock} /> */}
                         </div>
