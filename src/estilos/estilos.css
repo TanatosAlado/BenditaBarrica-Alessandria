@@ -35,18 +35,6 @@
     width: 100px;
 }
 
-.miCarro img{
-    width: 60px;
-    height: 60px;
-}
-
-.miCarro{
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    margin-left: 5px;
-}
-
 .miCard img{
     width: 120px;
     height: 90%;
@@ -259,3 +247,122 @@
   .fondo{
       background-color: grey;
   }
+
+
+  .TotalCompra{
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: gray;
+}
+
+.TituloCarrito{
+    padding-top: 40px;
+    color:white;
+    background-color: brown;
+    text-align: center;
+
+}
+
+.CarroVacio{
+    color: red;
+    margin-top: 80px;
+    font-size: 50px;
+}
+
+.FotoCarroVacio{
+ 
+   width: 40%;
+}
+
+.botonCarroVacio Link{
+    text-decoration: none;
+    background-color: aquamarine;
+}
+
+.botonCarroVacio button{
+    background-color: aquamarine;
+    margin-top: 50px;
+}
+
+.botonCarroVacio:link{
+    text-decoration: none;
+}
+
+.contenerdorGeneral{
+    background-color: brown;
+}
+
+
+.ContenedorCart{
+    border-style: solid;
+    border-color: lightblue;
+    margin-top: 20px;
+    /* background-color:lavender; */
+    /* max-width: 90%; */
+    width: 60%;
+    margin-left: 20%;
+    justify-content: center;
+    text-align: center;
+}
+
+.contenedorCart img{
+    width: 150px;
+    height: 150px;
+}
+
+.ImagenCart img{
+    width: 100px;
+    height: 100px;
+    margin-top: 15px;
+}
+.NombreCart{
+    margin-top: 10px;
+}
+.CantidadCart{
+    margin-top: 10px;
+}
+.PrecioCartUnit{
+    margin-top: 10px;
+}
+.PrecioCartTotal{
+    margin-top: 10px;
+}
+
+.RemoveItemCart img{
+    width: 25px;
+    margin-top: 20px;
+    background-color: lavender;
+    
+}
+.RemoveItemCart button{
+    border-style: none;
+    margin-bottom: 15px;
+    
+}
+
+
+.estiloCarro img {
+    width: 50px;
+    height: 50px;
+}
+
+.estiloCarro img:hover {
+    transform: scale(1.2);
+    transition: all 0.5s;
+    filter: drop-shadow(5px 5px 10px #444);
+}
+
+.ContadorBotonCarro{
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    border-radius: 50%;
+    border-color: transparent;
+    pointer-events: none;
+}
+
+
+.imagenYContador{
+    display: flex;
+}
+

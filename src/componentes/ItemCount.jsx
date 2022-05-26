@@ -9,19 +9,10 @@ export default function ItemCount({stock, inicial, onAdd}) {
     }
 
     function subs () {
-        if(count > 1){
+        if(count > inicial){
             setCount(count -1);
         }
     }
-    
-    // function onAdd () {
-    //     if (count===1){
-    //         alert('Has agregado ' + count + ' item en tu carrito');    
-    //     }
-    //     else{
-    //         alert('Has agregado ' + count + ' items en tu carrito');
-    //     }
-    // }
     
     return (
         <div className='formatoContador'>
