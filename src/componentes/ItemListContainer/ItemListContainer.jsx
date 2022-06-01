@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import ItemList from '../ItemList/ItemList'
-// import personalFetch from '../../datos/personalFetch';
-// import productos from "../../datos/nuestrosVinos";
 import { useParams } from "react-router-dom";
 import Spinner from '../Spinner/Spinner'
 import './ItemListContainer.css'
@@ -21,49 +19,31 @@ export default function ItemListContainer(){
   console.log("IdCategoria")
   console.log(idCategoria)
    
-  const getProd = async (categoria) =>{
-    console.log("mi categoria")
-    console.log(categoria)
-    // try {
+  const getProd = async (categoria) =>{ 
+    try {
      
-      const document = categoria ? query(collection(BaseVinos,"Productos")):collection(BaseVinos,"Productos")
+      const document = categoria ? query(collection(BaseVinos,"nuestrosVinos"), where('categoria',"==",categoria)):collection(BaseVinos,"nuestrosVinos")
       const col = await getDocs(document)
       const FirebaseData = col.docs.map((doc) => doc = { id:doc.id,...doc.data()})
       setProd(FirebaseData)
-      console.log("prod")
-      console.log(prod)
-    // } catch (error) {
-    //   console.log(error)
-    // }
+      
+    }
+    catch (error) {
+      console.log(error)
+    }
+    finally{(setCarga(false))}
   }  
    
     useEffect(() => {
       getProd(idCategoria)
     }, [idCategoria])
-
-
-
-
-  // useEffect (() => {
-  //   setCarga(true)
-  //   personalFetch(productos, idCategoria)
-    
-  //   .then( resultado => {setProd(resultado)
-  //     setCarga(false)})
-
-  //   .catch(error => console.log(error))
-
-  // }, [idCategoria]);
-
-  
   
     return (
 
     <>
         <div className="posicion">
-          {/* {carga? <Spinner /> : <ItemList productos={prod} />  } */}
-          <ItemList productos={prod} />  
-            
+          {carga? <Spinner /> : <ItemList productos={prod} />  }
+          {/* <ItemList productos={prod} /> */}
         </div>
     </>
     );
