@@ -1,11 +1,15 @@
 import React from 'react'
-import Item from './Item'
+import Item from '../Item/Item'
 
 function ItemList({productos}) {
 
 return(
+
+    <>
     
-     productos?.map(prod => (
+    <h3>Nuestros vinos</h3>
+    <div>
+    {productos?.map(prod => (
                 <Item
                 key={prod.id}
                 id={prod.id}
@@ -14,7 +18,13 @@ return(
                 imagen ={prod.imagen}
                 stock = {prod.stock}
                 />  
-            ))
+            ))}
+    </div>
+
+    
+    </>
+    
+
 )
 }
 

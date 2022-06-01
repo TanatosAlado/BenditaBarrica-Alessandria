@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card'
 import { Link } from 'react-router-dom'
+import './Item.css'
 
 function Item({id, nombre, precio, imagen, stock}) {
 
@@ -21,6 +22,7 @@ return (
                 </div>
             </Card>
         </div>   
+        
     </div>
     
 )

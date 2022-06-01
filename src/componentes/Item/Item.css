@@ -1,0 +1,52 @@
+.conte{
+    position: relative;
+    display: inline-block; 
+    justify-content: center;
+    width: 300px;
+    height: 250px;
+    /* border: red 5px solid; */
+}
+
+.miCard .card{
+    flex-direction: row;
+}
+
+
+.miCard img{
+    width: 120px;
+    height: 200px;
+    /* background-color: yellow; */
+}
+
+.miCard{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
+    margin-left: 5px;
+    margin-top: 5px; 
+}
+
+.detallesProducto {
+    margin-top: 7%;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.detallesProducto :link {
+    text-decoration: none;
+    background-color: bisque;
+}
+
+.detallesProducto :hover {
+    text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.cuerpoCard{
+    /* background-color: green; */
+    width: 180px;
+    display: flex;
+    align-items: center;
+}

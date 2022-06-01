@@ -1,0 +1,53 @@
+.TotalCompra{
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: gray;
+    text-align: center;
+}
+
+.TituloCarrito{
+    padding-top: 40px;
+    color:white;
+    background-color: brown;
+    text-align: center;
+}
+
+.CarroVacio{
+    color: brown;
+    margin-top: 80px;
+    font-size: 50px;
+}
+
+.FotoCarroVacio{
+   width: 40%;
+}
+
+.botonCarroVacio Link{
+    text-decoration: none;
+    background-color: aquamarine;
+}
+
+.botonCarroVacio button{
+    background-color: aquamarine;
+    margin-top: 50px;
+}
+
+.botonCarroVacio:link{
+    text-decoration: none;
+}
+
+.contenedorCart img{
+    width: 150px;
+    height: 150px;
+}
+
+.contenedorCart{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.vaciarCart{
+    margin-bottom: 20px;
+    align-self: center;
+    
+}

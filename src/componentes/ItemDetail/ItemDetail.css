@@ -1,0 +1,32 @@
+
+.containerDetail{
+    display: flex;
+    justify-content:  space-between;
+    max-width: 1200px;
+    align-items: center;
+    /* background-color:darkgoldenrod; */
+}
+
+.formatoDetalle img{
+    width: 150px;
+    height: 250px;
+}
+
+.formatoDetalle{
+    text-align: center;
+}
+
+.cajaContenedora{
+    width: 500px;
+    height: 350px;
+    background-color: white;
+}
+
+.detalleVino{
+    /* justify-items: center; */
+    width: 350px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

@@ -1,6 +1,7 @@
 import React,{useContext} from 'react'
-import CartContext from './CartContext';
-import tacho from '../images/tacho.png';
+import CartContext from '../CartContext/CartContext';
+import tacho from '../../images/tacho.png';
+import './CartItem.css'
 
 
 

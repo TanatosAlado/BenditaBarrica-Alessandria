@@ -1,7 +1,8 @@
 import React from "react";
-import barrica from '../images/barrica.png';
-import CartWidget from "./CartWidget";
+import barrica from '../../images/barrica.png';
+import CartWidget from "../CartWidget/CartWidget.jsx";
 import { NavLink } from 'react-router-dom';
+import './NavBar.css'
 
 export default function NavBar(){
 
