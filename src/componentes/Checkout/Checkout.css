@@ -1,0 +1,47 @@
+.contenedor {
+    max-width: 1170px;
+    margin: 0 auto 1rem;
+    padding: 1.5rem;
+   
+}
+
+.contenedor label{
+    width: 10%;
+}
+
+.contenedor input{
+    width: 20%;
+}
+
+.contenedor textarea{
+    width: 20%;
+    resize: none;
+}
+
+.contenedor button{
+    width: 30%;
+}
+
+.contenedor{
+    text-align: center;
+}
+
+    h4 {
+        text-align: center;
+        margin-top: 25px;
+        /* color:brown; */
+    }
+    
+    .confirmacion{
+        text-align: center;
+    }
+
+    .botonCarroVacio2{
+
+        background-color: aquamarine;
+        margin-top: 50px;
+        text-decoration: none;
+        width: 20%;
+        margin-left: 40%;
+    }
+    

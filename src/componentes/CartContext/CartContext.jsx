@@ -27,6 +27,7 @@ const removeItem =(id)=>{
   }
 
   const clear=()=>{
+    console.log("Ingrese en el clear")
     setProductosLista([]);
   };
 

@@ -5,6 +5,7 @@
     max-width: 1200px;
     align-items: center;
     /* background-color:darkgoldenrod; */
+    text-align: center;
 }
 
 .formatoDetalle img{
@@ -12,9 +13,9 @@
     height: 250px;
 }
 
-.formatoDetalle{
+/* .formatoDetalle{
     text-align: center;
-}
+} */
 
 .cajaContenedora{
     width: 500px;
@@ -28,5 +29,11 @@
     height: 250px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:flex-end;
+}
+
+.botonCarritoFin{
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 25px
 }

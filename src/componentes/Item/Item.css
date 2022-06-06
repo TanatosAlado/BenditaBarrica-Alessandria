@@ -20,8 +20,6 @@
 
 .miCard{
     display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
     text-align: center;
     margin-left: 5px;
     margin-top: 5px; 
@@ -45,7 +43,6 @@
 }
 
 .cuerpoCard{
-    /* background-color: green; */
     width: 180px;
     display: flex;
     align-items: center;

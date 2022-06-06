@@ -18,6 +18,6 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const BaseVinos = getFirestore(app)
+const baseVinos = getFirestore(app)
 
-export default BaseVinos
+export default baseVinos

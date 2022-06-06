@@ -30,7 +30,7 @@ const ItemDetail = ({item}) => {
                             <h6>Stock: {item?.stock}</h6> 
                         </div>
                     </div>
-                    {acumulador!==0?(<button  className='botonCarrito'><Link to='/Cart' style={{ color: '#00264D' }}>Terminar mi Compra</Link></button>): <ItemCount inicial={1} stock={item?.stock} onAdd={AgregarACarrito}></ItemCount>}
+                    {acumulador!==0?(<button  className='botonCarritoFin'><Link to='/Cart' style={{ color: '#00264D' }}>Terminar mi Compra</Link></button>): <ItemCount inicial={1} stock={item?.stock} onAdd={AgregarACarrito}></ItemCount>}
             </div>
         </div>
     )

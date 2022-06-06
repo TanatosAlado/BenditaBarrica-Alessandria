@@ -3,7 +3,7 @@ import ItemDetail from '../ItemDetail/ItemDetail.jsx'
 import { useParams } from 'react-router-dom'
 import Spinner from '../Spinner/Spinner'
 import './ItemDetailContainer.css'
-import BaseVinos from '../../datos/Firebase'
+import baseVinos from '../../datos/Firebase'
 import { doc,getDoc } from 'firebase/firestore';
 
 
@@ -17,9 +17,9 @@ const ItemDetailContainer = () => {
 
     const getItem= async(idItem)=>{
         try{
-          const item= doc(BaseVinos,"nuestrosVinos",idItem)
-          const Resultado= await getDoc(item)
-          const detalleItem={id:Resultado.id,...Resultado.data()}
+          const item= doc(baseVinos,"nuestrosVinos",idItem)
+          const resultado= await getDoc(item)
+          const detalleItem={id:resultado.id,...resultado.data()}
           setProducto(detalleItem)
         }
         catch(error){console.log(error)}

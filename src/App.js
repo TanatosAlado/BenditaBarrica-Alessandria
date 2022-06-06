@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Cart from './componentes/Cart/Cart.jsx';
 import { CartContextProvider } from './componentes/CartContext/CartContext';
 import Footer from './componentes/Footer/Footer.jsx'
+import { Checkout } from './componentes/Checkout/Checkout';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
             <Route path="/Cart" element={<Cart />} />
             <Route path="/categoria/:idCategoria" element={<ItemListContainer />} />
             <Route path="/item/:id" element={<ItemDetailContainer />} />
+            <Route path="/checkout" element={<Checkout/>} />             
           </Routes>
           <Footer />
         </Router>

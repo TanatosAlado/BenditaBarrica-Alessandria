@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import Spinner from '../Spinner/Spinner'
 import './ItemListContainer.css'
 import { collection, getDocs, query, where} from 'firebase/firestore';
-import BaseVinos from '../../datos/Firebase';
+import baseVinos from '../../datos/Firebase';
 
 export default function ItemListContainer(){
     
@@ -15,17 +15,14 @@ export default function ItemListContainer(){
 
   //Para utilizar parametros
   const {idCategoria} = useParams();  
-
-  console.log("IdCategoria")
-  console.log(idCategoria)
    
   const getProd = async (categoria) =>{ 
     try {
      
-      const document = categoria ? query(collection(BaseVinos,"nuestrosVinos"), where('categoria',"==",categoria)):collection(BaseVinos,"nuestrosVinos")
+      const document = categoria ? query(collection(baseVinos,"nuestrosVinos"), where('categoria',"==",categoria)):collection(baseVinos,"nuestrosVinos")
       const col = await getDocs(document)
-      const FirebaseData = col.docs.map((doc) => doc = { id:doc.id,...doc.data()})
-      setProd(FirebaseData)
+      const firebaseData = col.docs.map((doc) => doc = { id:doc.id,...doc.data()})
+      setProd(firebaseData)
       
     }
     catch (error) {

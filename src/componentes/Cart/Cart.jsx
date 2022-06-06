@@ -24,6 +24,7 @@ const Cart = () => {
                 <div className='TotalCompra'>Total Compra: $ {totalCompra()}</div>
                 <button className="vaciarCart" onClick={clear}>Vaciar Carrito</button>
             </div>
+            <button className="vaciarCart"><Link to={'/Checkout'}>Terminar Compra</Link></button>
           </div>
         ) : (
           <div className='contenedorCart'>
