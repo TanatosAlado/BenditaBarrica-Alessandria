@@ -18,9 +18,13 @@ export default function ItemCount({stock, inicial, onAdd}) {
     return (
         <div className='formatoContador'>
             <div className='botonesContador'>
-                <button onClick={subs}>-</button>
-                <p className='margenes'>{count}</p>
-                <button onClick={adding}>+</button>
+                <div>
+                    <button className='botonCarrito' onClick={subs}>-</button>
+                </div>
+                <p className='margenes'>{count}</p>  
+                <div>
+                    <button className='botonCarrito' onClick={adding}>+</button>
+                </div>
             </div>
             <button className='botonCarrito' onClick={()=> onAdd(count)}>Agregar al Carrito</button>
         </div>

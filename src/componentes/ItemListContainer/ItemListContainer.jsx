@@ -40,7 +40,6 @@ export default function ItemListContainer(){
     <>
         <div className="posicion">
           {carga? <Spinner /> : <ItemList productos={prod} />  }
-          {/* <ItemList productos={prod} /> */}
         </div>
     </>
     );

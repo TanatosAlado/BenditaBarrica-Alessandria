@@ -4,8 +4,8 @@ import './Checkout.css'
 import baseVinos from '../../datos/Firebase'
 import { collection, addDoc} from 'firebase/firestore';
 import { Link} from 'react-router-dom';
-
-import Spinner from '../Spinner/Spinner'
+import Spinner from '../Spinner/Spinner';
+import copas from '../../images/copas.jpg';
 
 
 
@@ -60,56 +60,62 @@ return (
     <>    
     {carga ? <Spinner />
         : (!idOrden&&
-        
+
+        <div className='salida'>
            <div className="contenedor">
-                <div className="">
+                <div className="formularioCompleto">
                     <div className="">
                         <h4 className="m-4">Finalizar Compra</h4> 
                     </div>
                         <form  onSubmit={enviar} className="formulario">
                             <p>
                                 <label>Apellido</label>
-                                <input type="text" name="Apellido"  value={Apellido}
-                            onChange={Input}required/>
+                                <input type="text" name="Apellido"  value={Apellido} onChange={Input} required/>
                             </p>
                             <p>
                                 <label>Nombre</label>
-                                <input type="text" name="Nombre"value={Nombre}  onChange={Input}
-                        required/>
+                                <input type="text" name="Nombre"value={Nombre} onChange={Input} required/>
                             </p> 
                             <p>
                                 <label>Correo</label>
-                                <input type="email" name="Email" value={Email}
-                            onChange={Input} required/>
+                                <input type="email" name="Email" value={Email} onChange={Input} required/>
                             </p>
                             <p>
                                 <label>Teléfono</label>
-                                <input type="number" name="Telefono" value={Telefono}
-                            onChange={Input} required/>
+                                <input type="number" name="Telefono" value={Telefono} onChange={Input} required/>
                             </p>
                             <p className="full">
                                 <label>Mensaje</label>
-                                <textarea name="Mensaje"  value={Mensaje}
-                            onChange={Input}placeholder="Opcional..."></textarea>
+                                <textarea name="Mensaje"  value={Mensaje} onChange={Input}placeholder="Opcional..."></textarea>
                             </p>
                             <p className="full">
-                                <button className="boton-enviar">Enviar</button>
+                                <button className="botonEnviar">Enviar</button>
                             </p>
                         </form>
                 </div>
-            </div>)
+            </div>
+        </div>
+)
     }
 
     <div>
     {
-        idOrden&&(
-            <div className='confirmacion'>
-                <h3>GRACIAS POR SU COMPRA</h3>
-                <h4>{`Su código de operación es: ${idOrden}`}</h4>
-                <h4>{`Le enviarenos a ${Email} la factura electrónica de su compra`}</h4>
-                <div className='botonCarroVacio2'><Link to={'/'}style={{ color: '#00264D' }} >Realizar otra compra </Link></div>
-               
-            </div>
+        idOrden&&( carga ? <Spinner /> : 
+            <div className='fondoConfirmacion'>
+                <div>
+                    <img src={copas} alt="" />
+                </div>
+                <div className='confirmacion'>
+                    <h2>GRACIAS POR SU COMPRA</h2>
+                    <h4>Código de operación</h4>
+                    <div className='codigo'>
+                        <h4>{`${idOrden}`}</h4>
+                    </div>
+                    <h4>{`Le enviarenos a ${Email} la factura electrónica de su compra`}</h4>
+                    <div className='botonCarroVacio2'><Link to={'/'}style={{ color: '#00264D' }} >Realizar otra compra </Link></div>
+                </div>
+            </div>    
+            
             )
     }
     </div>

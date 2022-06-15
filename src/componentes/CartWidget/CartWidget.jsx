@@ -10,7 +10,7 @@ export default function CartWidget(){
     
     return (
         
-        <div className="imagenYContador">
+        <div className="carroYContador">
             <div className='estiloCarro'>
                 <Link to={'/Cart'}><img src={miCarrito} alt="carrito compras"/></Link>
             </div>

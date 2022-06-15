@@ -12,6 +12,7 @@ export const CartContextProvider=({children})=> {
   const [productosLista ,setProductosLista]=useState([]);
   
   const addItem=(Product)=>{
+
   const productoRepetido= productosLista.findIndex(producto=>producto.id===Product.id)
   if (productoRepetido !== -1) {
 
@@ -27,7 +28,6 @@ const removeItem =(id)=>{
   }
 
   const clear=()=>{
-    console.log("Ingrese en el clear")
     setProductosLista([]);
   };
 

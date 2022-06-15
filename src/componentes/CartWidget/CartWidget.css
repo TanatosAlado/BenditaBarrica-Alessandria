@@ -1,5 +1,5 @@
 .estiloCarro img {
-    width: 50px;
+    width: 35px;
     height: 50px;
 }
 
@@ -18,6 +18,6 @@
     pointer-events: none;
 }
 
-.imagenYContador{
+.carroYContador{
     display: flex;
 }

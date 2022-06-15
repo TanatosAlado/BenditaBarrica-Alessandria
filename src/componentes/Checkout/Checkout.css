@@ -1,47 +1,84 @@
 .contenedor {
     max-width: 1170px;
-    margin: 0 auto 1rem;
+    margin: 0 auto;
     padding: 1.5rem;
-   
 }
 
 .contenedor label{
-    width: 10%;
+    width: 15%;
 }
 
 .contenedor input{
-    width: 20%;
+    width: 30%;
 }
 
 .contenedor textarea{
-    width: 20%;
+    width: 30%;
     resize: none;
 }
 
 .contenedor button{
-    width: 30%;
+    width: 45%;
 }
 
 .contenedor{
     text-align: center;
+    width: 60%;
+    background-color: white;
+
 }
 
-    h4 {
-        text-align: center;
-        margin-top: 25px;
-        /* color:brown; */
-    }
+h4 {
+    text-align: center;
+    margin-top: 25px;
+}
     
-    .confirmacion{
-        text-align: center;
-    }
+.confirmacion{
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+    border: 3px solid black;
+    background-color: white;
+}
 
-    .botonCarroVacio2{
+.fondoConfirmacion{
+    background-color: brown;
+    padding-bottom: 25px;
+}
 
-        background-color: aquamarine;
-        margin-top: 50px;
-        text-decoration: none;
-        width: 20%;
-        margin-left: 40%;
-    }
+.fondoConfirmacion img{
+    width: 40%;
+    margin-left: 30%;
+}
+
+.salida{
+    background-color: brown;
+    padding-bottom: 25px;
+}
+
+.botonCarroVacio2{
+    margin-top: 50px;
+    text-decoration: none;
+    width: 20%;
+    margin-left: 40%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: lightgrey;
+}
     
+h2{
+    color: black;
+}
+
+.codigo{
+    font-style: italic;
+    color: blue;
+}
+
+.botonEnviar{
+    border-radius: 5px;
+}
+
+.formularioCompleto{
+    border: 2px solid black;
+}

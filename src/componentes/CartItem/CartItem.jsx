@@ -10,13 +10,17 @@ const {removeItem}= useContext(CartContext);
 
   return (
     <div className='contenedorGeneral'>
-      <div className='ContenedorCart'>
-        <div className='ImagenCart'><img src={item.imagen}/></div> 
-        <div className='NombreCart'>{item.nombre}</div>
-        <div className='CantidadCart'>Cantidad: {item.cantidad}</div>
-        <div className='PrecioCartUnit'>Precio Unitario $ {item.precio}</div>
-        <div className='PrecioCartTotal'>Precio $  {(parseInt(item.precio))*(parseInt(item.cantidad)).toFixed(2)}</div> 
-        <div className='RemoveItemCart'><button onClick={()=>removeItem(item.id)}><img src={tacho}></img></button></div>
+      <div className='contenedorCart bg-info'>
+        <div>
+            <div className='imagenCart'><img src={item.imagen}/></div> 
+        </div>
+        <div>
+            <div className='nombreCart'>{item.nombre}</div>
+            <div className='cantidadCart'>Cantidad: {item.cantidad}</div>
+            <div className='precioCartUnit'>Precio Unitario $ {item.precio}</div>
+            <div className='precioCartTotal'>Precio $  {(parseInt(item.precio))*(parseInt(item.cantidad)).toFixed(2)}</div>             
+            <div className='removeItemCart'><button onClick={()=>removeItem(item.id)}><img src={tacho}></img></button></div>
+        </div>
       </div>
     </div>
   )

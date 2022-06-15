@@ -1,10 +1,8 @@
 .conte{
     position: relative;
-    display: inline-block; 
-    justify-content: center;
+    display: inline-block;
     width: 300px;
     height: 250px;
-    /* border: red 5px solid; */
 }
 
 .miCard .card{
@@ -21,6 +19,7 @@
 .miCard{
     display: flex;
     text-align: center;
+    justify-content: space-between;
     margin-left: 5px;
     margin-top: 5px; 
 }
@@ -33,6 +32,9 @@
 
 .detallesProducto :link {
     text-decoration: none;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
     background-color: bisque;
 }
 

@@ -1,13 +1,8 @@
-
-
-
 .bienvenida{
     background-color: brown;
     color: white;
     text-align: center;
 } 
-
-
 
 .logoInicial{
     background-color: brown;
@@ -20,17 +15,14 @@
     margin-top: 25px;
 }
 
-
-
-
 .Link{
     color: white;
 }
 
-.active{
+/* .active{
     background-color: red;
     padding: 3px;
-}
+} */
 
 .contenedorSpinner {
     height: 100vh;
@@ -44,8 +36,6 @@
     left: 50%;
 }
 
-
-
-  .fondo{
-      background-color: grey;
-  }
+.fondo{
+    background-color: grey;
+}

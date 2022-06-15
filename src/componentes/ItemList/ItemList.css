@@ -1,0 +1,14 @@
+h2{
+    color: red;
+}
+
+.matriz{
+    margin-top: 25px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;   
+}
+
+span{
+    color: white;
+}

@@ -1,4 +1,3 @@
-
 .containerDetail{
     display: flex;
     justify-content:  space-between;
@@ -13,10 +12,6 @@
     height: 250px;
 }
 
-/* .formatoDetalle{
-    text-align: center;
-} */
-
 .cajaContenedora{
     width: 500px;
     height: 350px;
@@ -24,7 +19,6 @@
 }
 
 .detalleVino{
-    /* justify-items: center; */
     width: 350px;
     height: 250px;
     display: flex;
@@ -33,7 +27,61 @@
 }
 
 .botonCarritoFin{
-    width: 40%;
-    margin-left: 30%;
-    margin-top: 25px
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-style:normal;
+}
+
+.orden{
+    display: flex;
+    flex-direction:row;
+    margin-bottom: 5px;
+    margin-left: 5px; 
+    text-align: center;
+}
+
+.orden p{
+    color: black;
+}
+
+.orden input{
+    pointer-events: none;
+}
+
+.ordenyprogreso{
+    position: relative;
+    display: inline-block; 
+    justify-content: center;
+    background-color: white;
+} 
+
+.tamano{
+    width: 120px;
+    height: 300px;
+}
+
+.tamano img{
+    width: 100%;
+    height: 100%;
+}
+
+.tamano2{
+    width: 200px;
+    height: 300px;
+    text-align: center;
+}
+
+.tamanio img{
+    width: 60px;
+    height: 150px;
+}
+
+.card-title{
+    position: relative;
+    margin-top: 0%;
+    margin-bottom: 30px;
 }

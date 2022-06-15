@@ -13,12 +13,13 @@
     justify-content: start;
     background-color: brown;
     padding-bottom: 50px;
+    align-items: center;
 }
 
 .items li {
     list-style-type: none;
     padding: 15px;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 .items li a {

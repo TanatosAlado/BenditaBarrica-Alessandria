@@ -3,7 +3,7 @@
     background-color: brown;
 }
 
-.ContenedorCart{
+.contenedorCart{
     border-style: solid;
     border-color: lightblue;
     margin-top: 20px;
@@ -13,36 +13,39 @@
     margin-left: 20%;
     justify-content: center;
     text-align: center;
+
+    display: flex;
+    flex-direction: row;
 }
 
-
-
-
-.ImagenCart img{
+.imagenCart img{
     width: 100px;
-    height: 100px;
+    height: 80%;
     margin-top: 15px;
 }
-.NombreCart{
+
+.nombreCart{
     margin-top: 10px;
 }
-.CantidadCart{
+.cantidadCart{
     margin-top: 10px;
 }
-.PrecioCartUnit{
+.precioCartUnit{
     margin-top: 10px;
 }
-.PrecioCartTotal{
+.precioCartTotal{
     margin-top: 10px;
 }
 
-.RemoveItemCart img{
+.removeItemCart img{
     width: 25px;
-    margin-top: 20px;
-    background-color: lavender;
+    height: 25px;
+    margin-top: 10px;
+    /* background-color: lavender; */
+    /* background-color: white; */
     
 }
-.RemoveItemCart button{
+.removeItemCart button{
     border-style: none;
     margin-bottom: 15px;
     

@@ -1,8 +1,9 @@
 .botonesContador{
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
+    align-items: baseline;
+    margin-bottom: 5px;
+    padding-top: 5px;
 }
 
 .formatoContador{
@@ -16,9 +17,15 @@
     padding-bottom: 5px;
     background-color: lightgray;
     height: 100px;
+    margin-bottom: 10px;
 }
 
 .margenes{
     margin-left: 20px;
     margin-right: 20px;
+    align-items: center;
+}
+
+.botonCarrito{
+    border-radius: 5px;
 }
