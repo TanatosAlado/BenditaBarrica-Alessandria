@@ -1,27 +1,20 @@
-
-.contenerdorGeneral{
-    background-color: brown;
-}
-
 .contenedorCart{
-    border-style: solid;
-    border-color: lightblue;
-    margin-top: 20px;
-    /* background-color:lavender; */
-    /* max-width: 90%; */
-    width: 60%;
-    margin-left: 20%;
-    justify-content: center;
-    text-align: center;
-
     display: flex;
-    flex-direction: row;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;    
+    margin-top: 20px;
+    background-color:white;
+    width: 40%;
+    height: 250px;
+    margin-left: 30%;
+    align-items: center;
 }
 
-.imagenCart img{
+.imagenCart {
     width: 100px;
-    height: 80%;
-    margin-top: 15px;
+    height: 90%;
+    margin-top: 5%;
 }
 
 .nombreCart{
@@ -41,12 +34,28 @@
     width: 25px;
     height: 25px;
     margin-top: 10px;
-    /* background-color: lavender; */
-    /* background-color: white; */
-    
 }
+
 .removeItemCart button{
     border-style: none;
     margin-bottom: 15px;
-    
+    background-color: white;
+}
+
+.imagenCartItem{
+    width: 30%;
+    height: 100%;
+    align-items: center;
+}
+
+.imagenCartItem img{
+    width: 100px;
+    height: 100%;
+}
+
+.datosCartItem{
+    width: 70%;
+    text-align: center;
+    justify-content: space-between;
+    height: 100%;
 }

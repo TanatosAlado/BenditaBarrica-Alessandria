@@ -5,7 +5,7 @@ import baseVinos from '../../datos/Firebase'
 import { collection, addDoc} from 'firebase/firestore';
 import { Link} from 'react-router-dom';
 import Spinner from '../Spinner/Spinner';
-import copas from '../../images/copas.jpg';
+
 
 
 
@@ -21,11 +21,12 @@ export const Checkout = () => {
         Apellido:'',
         Nombre:'',
         Email:'',
+        EmailConf:'',
         Telefono:'',
         Mensaje:''
     })
 
-    const {Apellido,Nombre, Email, Telefono, Mensaje} = buyer
+    const {Apellido,Nombre, Email, EmailConf, Telefono, Mensaje} = buyer
 
     const Input = (e) => {
         setBuyer(({
@@ -44,15 +45,25 @@ export const Checkout = () => {
 
         } catch (error) {
         }
+        finally{(setCarga(false))}
     }
 
     const enviar = (e) => {
         e.preventDefault()
-        const dia = new Date()
-        const items = productosCarrito.map(e=> {return {id:e.id,Nombre:e.nombre,Precio:e.precio,Cantidad:e.cantidad}})
-        const total = totalCompra()
-        const data = {buyer,dia,items,total}
-        generarPedido(data)
+        let mail1 = e.target.Email.value;
+        let mail2 = e.target.EmailConf.value
+
+        if (mail1 === mail2){
+            const dia = new Date()
+            const items = productosCarrito.map(e=> {return {id:e.id,Nombre:e.nombre,Precio:e.precio,Cantidad:e.cantidad}})
+            const total = totalCompra()
+            const data = {buyer,dia,items,total}
+            generarPedido(data)
+        }
+        else{
+            alert("Falla verificación de correo")
+        }
+
     }
     
 return (
@@ -62,49 +73,48 @@ return (
         : (!idOrden&&
 
         <div className='salida'>
-           <div className="contenedor">
+            <div className="contenedor">
                 <div className="formularioCompleto">
-                    <div className="">
-                        <h4 className="m-4">Finalizar Compra</h4> 
-                    </div>
-                        <form  onSubmit={enviar} className="formulario">
-                            <p>
-                                <label>Apellido</label>
-                                <input type="text" name="Apellido"  value={Apellido} onChange={Input} required/>
-                            </p>
-                            <p>
-                                <label>Nombre</label>
-                                <input type="text" name="Nombre"value={Nombre} onChange={Input} required/>
-                            </p> 
-                            <p>
-                                <label>Correo</label>
-                                <input type="email" name="Email" value={Email} onChange={Input} required/>
-                            </p>
-                            <p>
-                                <label>Teléfono</label>
-                                <input type="number" name="Telefono" value={Telefono} onChange={Input} required/>
-                            </p>
-                            <p className="full">
-                                <label>Mensaje</label>
-                                <textarea name="Mensaje"  value={Mensaje} onChange={Input}placeholder="Opcional..."></textarea>
-                            </p>
-                            <p className="full">
-                                <button className="botonEnviar">Enviar</button>
-                            </p>
-                        </form>
+                    <h4 className="m-4">Finalizar Compra</h4> 
+                    <form  onSubmit={enviar} className="formulario">
+                        <p>
+                            <label>Apellido</label>
+                            <input type="text" name="Apellido"  value={Apellido} onChange={Input} required/>
+                        </p>
+                        <p>
+                            <label>Nombre</label>
+                            <input type="text" name="Nombre"value={Nombre} onChange={Input} required/>
+                        </p> 
+                        <p>
+                            <label>Correo</label>
+                            <input type="email" name="Email" value={Email} onChange={Input} required/>
+                        </p>
+                        <p>
+                            <label>Confirmar Correo</label>
+                            <input type="email" name="EmailConf" value={EmailConf} onChange={Input} required/>
+                        </p>
+                        <p>
+                            <label>Teléfono</label>
+                            <input type="number" name="Telefono" value={Telefono} onChange={Input} required/>
+                        </p>
+                        <p className="full">
+                            <label>Mensaje</label>
+                            <textarea name="Mensaje"  value={Mensaje} onChange={Input}placeholder="Opcional..."></textarea>
+                        </p>
+                        <p className="full">
+                            <button className="botonEnviar">Enviar</button>
+                        </p>
+                    </form>
                 </div>
             </div>
         </div>
-)
+        )
     }
 
     <div>
     {
         idOrden&&( carga ? <Spinner /> : 
             <div className='fondoConfirmacion'>
-                <div>
-                    <img src={copas} alt="" />
-                </div>
                 <div className='confirmacion'>
                     <h2>GRACIAS POR SU COMPRA</h2>
                     <h4>Código de operación</h4>
@@ -119,8 +129,6 @@ return (
             )
     }
     </div>
-
 </>
-
 )
 }

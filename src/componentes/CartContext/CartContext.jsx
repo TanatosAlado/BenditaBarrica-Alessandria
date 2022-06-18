@@ -49,12 +49,12 @@ const removeItem =(id)=>{
 
   return (
     <CartContext.Provider value={{
-       productosCarrito:productosLista,
-       addItem,
-       removeItem,
-       clear,
-       acumularCarro,
-       totalCompra
+      productosCarrito:productosLista,
+      addItem,
+      removeItem,
+      clear,
+      acumularCarro,
+      totalCompra
     }}>
       {children}
     </CartContext.Provider>

@@ -36,9 +36,9 @@ function Footer() {
                     <div className="box redes">
                         <h2>Siguenos</h2>
                         <div className="red-social">
-                            <a href="https://api.whatsapp.com/send?phone=+5493425289170/"><img width="100%" src={whatsapp}></img></a>
-                            <a href="#"><img width="100%" src={insta}></img></a>
-                            <a href="#"><img width="100%" src={facebook}></img></a>
+                            <a href="https://api.whatsapp.com/send?phone=+5493425289170/"><img width="100%" src={whatsapp} alt="ws"></img></a>
+                            <a href="https://www.instagram.com/willywinestore/"><img width="100%" src={insta} alt="ig"></img></a>
+                            <a href="https://www.facebook.com/willywinestore/"><img width="100%" src={facebook} alt="fb"></img></a>
                         </div>    
                     </div>
                 </div>

@@ -38,25 +38,6 @@ const ItemDetail = ({item}) => {
             
         </div>
 
-{/* 
-        <div className='cajaContenedora'>
-            <div className='formatoDetalle'>
-                    <div className='containerDetail'>
-                        <img src={item?.imagen} alt={item?.nombre} /> 
-                        <div className='detalleVino'>
-                            <h4>{item?.nombre}</h4>
-                            <h6>Origen: {item?.origen}</h6>
-                            <h6>Cepa: {item?.cepa}</h6>
-                            <h6>Maridaje: {item?.maridaje}</h6>
-                            <h6><strong>Precio: ${item?.precio}</strong></h6>
-                            <h6>Stock: {item?.stock}</h6> 
-                        </div>
-                    </div>
-                    {acumulador!==0?(<button  className='botonCarritoFin'><Link to='/Cart' style={{ color: '#00264D' }}>Terminar mi Compra</Link></button>): <ItemCount inicial={1} stock={item?.stock} onAdd={AgregarACarrito}></ItemCount>}
-            </div>
-        </div>
- */}
-
 </>
 
       
