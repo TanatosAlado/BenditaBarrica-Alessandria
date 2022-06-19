@@ -4,7 +4,6 @@ import bienvenida from '../../images/bienvenida.png'
 import insta from '../../images/instagramIcon.png'
 import facebook from '../../images/facebookIcon.png'
 import whatsapp from '../../images/whatsappIcon.png'
-
 import { Link } from 'react-router-dom';
 
 
@@ -48,10 +47,7 @@ function Footer() {
         </footer>
     
     </>
-
-
-
-  )
+)
 }
 
 export default Footer

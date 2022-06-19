@@ -24,7 +24,6 @@ const {removeItem}= useContext(CartContext);
       </div>
     </div>
   )
-  
 }
 
 export default CartItem
